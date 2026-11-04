@@ -1,0 +1,32 @@
+# Ambientes virtuais
+.venv/
+venv/
+ENV/
+
+# Byte-compiled / cache do Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Cache do FastF1
+cache/
+cache_f1/
+.fastf1_cache/
+
+# Dados e Modelos pesados
+data/
+*.csv
+*.parquet
+*.pkl
+*.joblib
+*.h5
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# IDEs e editores
+.vscode/
+.idea/
+
+# Variáveis de ambiente
+.env
