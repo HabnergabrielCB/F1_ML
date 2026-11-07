@@ -26,7 +26,7 @@ def prepare_features(input_path='f1_dataset_raw.csv'):
     encoded_df = pd.DataFrame(encoded_cats, columns=encoder.get_feature_names_out(cat_cols))
     
     # 3. Adiciona a nova feature na lista de variáveis numéricas
-    joblib.dump(encoder, 'f11_encoder.pkl')
+    joblib.dump(encoder, 'f1_encoder.pkl')
     num_features = ['grid_position', 'avg_points_last_3']
     
     X = pd.concat([df[num_features].reset_index(drop=True), encoded_df], axis=1)
