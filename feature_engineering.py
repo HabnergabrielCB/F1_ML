@@ -27,7 +27,7 @@ def prepare_features(input_path='f1_dataset_raw.csv'):
     
     # 3. Adiciona a nova feature na lista de variáveis numéricas
     joblib.dump(encoder, 'f11_encoder.pkl')
-    num_features = ['grid_position', 'air_temp', 'track_temp', 'rain', 'avg_points_last_3']
+    num_features = ['grid_position', 'avg_points_last_3']
     
     X = pd.concat([df[num_features].reset_index(drop=True), encoded_df], axis=1)
     y = df['target_podium'].reset_index(drop=True)
